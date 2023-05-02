@@ -70,4 +70,12 @@ export const Input = styled.input`
 
   color: ${colors.dark};
   box-shadow: 0px 5px 30px ${colors.dark};
+
+  &::placeholder {
+    font-style: italic;
+  }
+
+  &:focus {
+    background: white;
+  }
 `

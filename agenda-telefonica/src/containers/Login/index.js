@@ -80,6 +80,7 @@ export function Login () {
             <Input
               type="email"
               {...register('email')}
+              placeholder='e-mail@email.com'
               error={errors.email?.message}
             />
             <ErrorMessage>{errors.email?.message}</ErrorMessage>
@@ -88,6 +89,7 @@ export function Login () {
             <Label>Senha</Label>
             <Input
               type="password"
+              placeholder='1247x@$%87'
               {...register('password')}
               error={errors.password?.message}
             />

@@ -104,17 +104,18 @@ export function NewContact () {
               type="text"
               {...register('name')}
               error={errors.name?.message}
+              placeholder='Gabriel Silva'
             />
             <ErrorMessage>{errors.name?.message}</ErrorMessage>
           </div>
           <span style={{ display: 'flex' }}>
             <div style={{ width: '20%', marginRight: '8px' }}>
               <Label>DDD</Label>
-              <Input type="number" {...register('ddd')} required />
+              <Input type="number" {...register('ddd')} required placeholder='11' />
             </div>
             <div style={{ width: '80%' }}>
               <Label>N° Telefone</Label>
-              <Input type="number" {...register('phone')} required />
+              <Input type="number" {...register('phone')} required placeholder='958478801' />
             </div>
           </span>
           <div>
@@ -122,6 +123,8 @@ export function NewContact () {
             <Input
               type="email"
               {...register('email')}
+              placeholder = 'email@email.com'
+
               error={errors.email?.message}
               required
             />
@@ -132,6 +135,7 @@ export function NewContact () {
             <Input
               type="text"
               {...register('address')}
+              placeholder='Rua Tamandaré, 258 - SP'
               required
               error={errors.address?.message}
             />

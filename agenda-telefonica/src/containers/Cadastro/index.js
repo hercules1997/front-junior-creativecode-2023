@@ -7,8 +7,15 @@ import * as Yup from 'yup'
 
 import { Button, ErrorMessage, ButtonLink } from '../../components'
 import { Background } from '../../components/Background'
+import paths from '../../constants/paths'
 import api from '../../services/api'
-import { Container, ContainerItens, Label, Input, ContainerMaster } from '../Login/style'
+import {
+  Container,
+  ContainerItens,
+  Label,
+  Input,
+  ContainerMaster
+} from '../Login/style'
 
 /*
    ESTRUTURA DE CADASTRO DE USUÁRIO
@@ -59,9 +66,9 @@ export function Cadastro () {
         toast.success('Seu cadastro foi realizado com sucesso!')
         setTimeout(() => {
           if (status === 201 || status === 200) {
-            history.push('/login')
+            history.push(paths.List)
           } else {
-            history.push('/cadastro')
+            history.push(paths.Register)
           }
         }, 1000)
       } else if (status === 409) {
@@ -86,6 +93,8 @@ export function Cadastro () {
             <Input
               type="text"
               {...register('name')}
+              placeholder = 'Carlos Antônio'
+
               error={errors.name?.message}
             />
             <ErrorMessage>{errors.name?.message}</ErrorMessage>
@@ -94,6 +103,7 @@ export function Cadastro () {
             <Input
               type="email"
               {...register('email')}
+              placeholder="e-mail@email.com"
               error={errors.email?.message}
             />
             <ErrorMessage>{errors.email?.message}</ErrorMessage>
@@ -102,6 +112,7 @@ export function Cadastro () {
             <Input
               type="password"
               {...register('password')}
+              placeholder="1247x@$%87"
               error={errors.password?.message}
             />
             <ErrorMessage>{errors.password?.message}</ErrorMessage>
@@ -109,6 +120,7 @@ export function Cadastro () {
             <Label>Confirmar Senha</Label>
             <Input
               type="password"
+              placeholder="1247x@$%87"
               {...register('confirmPassword')}
               error={errors.confirmPassword?.message}
             />
@@ -116,7 +128,7 @@ export function Cadastro () {
 
             <Button type="submit">Cadastrar</Button>
             <ButtonLink>
-              Já possui conta? <Link to={'/login'}>Acesse!</Link>
+              Já possui conta? <Link to={paths.List}>Acesse!</Link>
             </ButtonLink>
           </form>
         </ContainerItens>
