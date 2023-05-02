@@ -27,6 +27,7 @@ Instalação dos pacotes:
 
 
 - `Container Docker`<br>
+  
 É nessesário criar uma container para o uso do banco de dados
 
 
