@@ -1,6 +1,6 @@
 
 # Aplicativo de agênda telefônica 
-## Escop e objetivo
+## Escopo e objetivo
 
 
 É um projeto desenvolvido para cadastrar contatos pessoais
