@@ -35,7 +35,7 @@ export function ContactList () {
       setContact(data)
     }
     loadCtt()
-  }, [])
+  }, [contacts])
 
   /*
 CHAMADA A API PARA DELETAR CONTATO
