@@ -28,13 +28,11 @@ Instalação dos pacotes:
 
 - `Container Docker`<br>
   
-É nessesário criar uma container para o uso do banco de dados
-
-
+É nessesário criar um container para o uso do banco de dados
 
 
 ### Para criar o container utilize o código abaixo
-*É necessário ter o docker instalado*
+*É necessário ter o docker instalado*<br>
 docker run --name agendaTel-postgres -e POSTGRES_PASSWORD=postgres -p 5432:5432 -d postgres
 
 
