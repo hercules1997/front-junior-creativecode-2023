@@ -43,7 +43,7 @@ CHAMADA A API PARA DELETAR CONTATO
     await toast.promise(api.delete(`contatos/${ctt.id}`), {
       pending: 'Deletando contato...',
       success: 'Contato deletado com sucesso!',
-      error: 'Falha ao deletar produto, por favor tente novamente'
+      error: 'Falha ao deletar contato, por favor tente novamente'
     })
   }
 
