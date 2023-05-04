@@ -51,6 +51,10 @@ export const Input = styled.input`
   outline: none;
   border-radius: 10px;
   border: none;
+  &::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+  }
+
   border: ${(props) => (props.error ? '2px solid red' : 'none')};
   &:focus-visible {
     background: white;

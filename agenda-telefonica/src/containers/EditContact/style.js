@@ -40,6 +40,9 @@ export const Input = styled.input`
   outline: none;
   border-radius: 10px;
   border: none;
+   &::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+  }
 
   &:focus-visible {
     background: ${colors.light};
