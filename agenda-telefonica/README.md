@@ -12,7 +12,7 @@ Você poderá escolher como deseja usá-la:
 - `git clone`
 - `Download ZIP`
   
-No link https://github.com/hercules1997/front-junior-creativecode-2023
+link https://github.com/hercules1997/front-junior-creativecode-2023
 
 *Nessessário o uso da API https://github.com/hercules1997/api-agenda-tel*
 
