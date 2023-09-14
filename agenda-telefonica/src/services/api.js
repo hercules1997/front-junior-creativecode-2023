@@ -1,7 +1,7 @@
 import axios from 'axios'
 // Exportação da API
 const api = axios.create({
-  baseURL: 'http://localhost:3008/'
+  baseURL: 'api-agenda-tel.railway.internal'
 })
 
 // Verificação do token para o usuario acessar aplicação
